@@ -19,7 +19,7 @@ const app = express();
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser())
-app.use(cors({ origin: ["https://notes-4-you.netlify.app"], credentials: true }))
+app.use(cors())
 
 
 app.listen(3000, () => {
